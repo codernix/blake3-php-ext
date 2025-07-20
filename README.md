@@ -1,4 +1,4 @@
-# BLAKE3 PHP Extension
+# Codernix BLAKE3 PHP Extension
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Latest Stable Version](https://img.shields.io/packagist/v/codernix/blake3-php-ext.svg?style=flat-square)](https://packagist.org/packages/codernix/blake3-php-ext)
