@@ -23,15 +23,13 @@
 #include "config.h"
 #endif
 
-// ... rest of your source file
-
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
 
 #include "php.h"
-#include "php_blake3.h" // Your extension's header
-#include "blake3_wrapper.h" // The library's header
+#include "php_blake3.h"
+#include "blake3_wrapper.h"
 
 // Define arginfo for the PHP function
 ZEND_BEGIN_ARG_INFO_EX(arginfo_blake3_hash, 0, 0, 1)
@@ -65,7 +63,8 @@ zend_module_entry blake3_module_entry = {
     "blake3",
     blake3_functions,
     NULL, NULL, NULL, NULL, NULL,
-    PHP_BLAKE3_VERSION, // Use version from your header
+    // Use version from your header. We provide an updated header as we update the Wrapper version, but check for your own use case
+    PHP_BLAKE3_VERSION,
     STANDARD_MODULE_PROPERTIES
 };
 
